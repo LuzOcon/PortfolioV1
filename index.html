@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luz Ocón</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><i class="bi bi-house"></i
+          ></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Proyectos
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="proyectos/proyectos.html"
+                      >Todos mis Proyectos</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="proyectos/java.html"
+                      >HTML / CSS</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="proyectos/python.html"
+                      >Python</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="aboutMe.html"
+                  >Sobre Mí</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero d-flex align-items-center text-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Texto -->
+          <div class="col-lg-6 col-md-12">
+            <h1 class="display-2 fw-bold">
+              ¡Hola, soy <span class="heroName">Luz</span>!
+            </h1>
+            <p class="lead mb-4">Desarrolladora Java FullStack 👩‍💻</p>
+            <a href="#contacto" class="btn btn-lg btn-outline-light"
+              >Contáctame</a
+            >
+            <a
+              href="assets/Luz Andrea Hernandez Ocon CV.pdf"
+              download
+              class="btn btn-lg btn-outline-light"
+            >
+              <i class="bi bi-download me-2"></i> Descargar CV</a
+            >
+          </div>
+          <!-- Imagen -->
+          <div class="col-lg-6 col-md-12 text-center mt-4 mt-lg-0">
+            <img
+              src="./assets/imagenes/Yo-ia.png"
+              alt="Yo!"
+              class="img-fluid rounded shadow"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="mb-4">Sobre mí</h2>
+        <p class="lead w-80 mx-auto fw-semibold">
+          Soy desarrolladora especializada en Java con formación en Ingeniería
+          Biomédica, apasionada por la programación, análisis de datos e
+          inteligencia artificial. He participado en proyectos académicos y
+          personales donde desarrollé soluciones innovadoras y eficientes. Mi
+          objetivo es crecer profesionalmente en desarrollo Fullstack, aportando
+          impacto en entornos tecnológicos desafiantes y aprendiendo
+          continuamente.
+        </p>
+        <h2 class="mb-4">Stack Tech</h2>
+        <div class="container">
+          <div class="d-flex justify-content-around flex-wrap gap-3">
+          <img src="./assets/imagenes/HTML5-Logo.png" alt="HTML logo" id="logoImg">
+          <img src="./assets/imagenes/CSS-logo.png" alt="CSS logo" id="logoImg">
+          <img src="./assets/imagenes/JavaScript-Logo.png" alt="JS logo" id="logoImg">
+          <img src="./assets/imagenes/Java-logo.png" alt="Java logo" id="logoImg">
+          <img src="./assets/imagenes/Python-logo.png" alt="Python logo" id="logoImg">
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 text-light">Algunos proyectos</h2>
+        <div class="row g-4">
+          <!-- usamos col-md-4 para hacer 3 columnas responsivas -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="./assets/imagenes/Deteccion-caidas-imagen.png"
+                class="card-img-top"
+                alt="Proyecto 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Dispositivo de Detección de Caídas en Adultos Mayores
+                </h5>
+                <p class="card-text">
+                  Desarrollo de tecnología wearable utilizando redes neuronales.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="./assets/imagenes/El-Truco-imagen.avif"
+                class="card-img-top"
+                alt="Proyecto 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Website "El Truco"</h5>
+                <p class="card-text">
+                  Diseño y programación de página web para venta de productos
+                  ganaderos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="./assets/imagenes/Generador-imagen.png"
+                class="card-img-top"
+                alt="Proyecto 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Generador de Contraseñas</h5>
+                <p class="card-text">
+                  Diseño y desarrollo de generador de contraseñas aleatorio.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 text-center">
+            <a
+              href="proyectos/proyectos.html"
+              class="btn btn-lg btn-outline-light"
+              >Ver más proyectos</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="mb-4">Contacto</h2>
+        <h5 class="mb-2"><a class="text-dark text-decoration-none" href="mailto:luzhernandezocon@gmail.com">luzhernandezocon@gmail.com</a></h5>
+        <!-- Avanzado: "list-unstyled" quita viñetas, "d-flex justify-content-center gap-3" alinea los ítems -->
+        <ul class="list-unstyled d-flex justify-content-center gap-3">
+          <li>
+            <a href="https://www.linkedin.com/in/luzocon/" target="_blank"
+              ><i class="bi bi-linkedin fs-2"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/LuzOcon" target="_blank"
+              ><i class="bi bi-github fs-2"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-custom py-3 text-center">
+      <p class="mb-0">&copy; 2025 - Luz Andrea Hernández ocón</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
