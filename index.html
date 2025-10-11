@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Luz Ocón</title>
+    <title>Luz Ocón | Portafolio</title>
     <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -22,56 +22,38 @@
   <body>
     <!-- Navbar -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+      <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"
-            ><i class="bi bi-house"></i
-          ></a>
+          <a class="navbar-brand" href="index.html"><i class="bi bi-house"></i></a>
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Proyectos
-                </a>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Proyectos</a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="proyectos/proyectos.html"
-                      >Todos mis Proyectos</a
-                    >
+                    <a class="dropdown-item" href="proyectos/proyectos.html#todos">Todos mis Proyectos</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="proyectos/java.html"
-                      >HTML / CSS</a
-                    >
+                    <a class="dropdown-item" href="proyectos/proyectos.html#html">HTML / CSS</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="proyectos/python.html"
-                      >Python</a
-                    >
+                    <a class="dropdown-item" href="proyectos/proyectos.html#python">Python</a>
                   </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="aboutMe.html"
-                  >Sobre Mí</a
-                >
+                <a class="nav-link" href="aboutMe.html">Sobre Mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cv.html">CV</a>
               </li>
             </ul>
           </div>
@@ -83,43 +65,32 @@
     <section class="hero d-flex align-items-center text-light">
       <div class="container">
         <div class="row align-items-center">
+          
           <!-- Texto -->
           <div class="col-lg-6 col-md-12">
             <h1 class="display-2 fw-bold">
               ¡Hola, soy <span class="heroName">Luz</span>!
             </h1>
-            <p class="lead mb-4">Desarrolladora Java FullStack 👩‍💻</p>
-            <a href="#contacto" class="btn btn-lg btn-outline-light"
-              >Contáctame</a
-            >
-            <a
-              href="assets/Luz Andrea Hernandez Ocon CV.pdf"
-              download
-              class="btn btn-lg btn-outline-light"
-            >
-              <i class="bi bi-download me-2"></i> Descargar CV</a
-            >
+            <p class="lead mb-4">Desarrollo Java FullStack & UX design</p>
+            <a href="#contacto" class="btn btn-lg btn-outline-light">Contáctame</a>
+            <!-- <a href="assets/Luz Andrea Hernandez Ocon CV.pdf" target="_blank" class="btn btn-lg btn-outline-light">
+              <i class="bi bi-download me-2"></i> Descargar CV</a> -->
           </div>
           <!-- Imagen -->
           <div class="col-lg-6 col-md-12 text-center mt-4 mt-lg-0">
-            <img
-              src="./assets/imagenes/Yo-ia.png"
-              alt="Yo!"
-              class="img-fluid rounded shadow"
-            />
+            <img src="./assets/imagenes/Yo-ia.png" alt="Yo!" class="img-fluid rounded shadow"/>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Sobre mí -->
-    <section id="sobre-mi" class="py-5 bg-light">
+    <section id="sobre-mi" class="py-5 bg-light text-dark">
       <div class="container text-center">
         <h2 class="mb-4">Sobre mí</h2>
-        <p class="lead w-80 mx-auto fw-semibold">
+        <p class="lead mx-auto fw-semibold">
           Soy desarrolladora especializada en Java con formación en Ingeniería
-          Biomédica, apasionada por la programación, análisis de datos e
-          inteligencia artificial. He participado en proyectos académicos y
+          Biomédica, apasionada por la programación y la inteligencia artificial. He participado en proyectos académicos y
           personales donde desarrollé soluciones innovadoras y eficientes. Mi
           objetivo es crecer profesionalmente en desarrollo Fullstack, aportando
           impacto en entornos tecnológicos desafiantes y aprendiendo
@@ -142,22 +113,22 @@
     <!-- Proyectos -->
     <section id="proyectos" class="py-5">
       <div class="container">
-        <h2 class="text-center mb-5 text-light">Algunos proyectos</h2>
+        <h2 class="text-center mb-5">Algunos proyectos</h2>
         <div class="row g-4">
           <!-- usamos col-md-4 para hacer 3 columnas responsivas -->
           <div class="col-md-4">
             <div class="card h-100 shadow-sm">
               <img
-                src="./assets/imagenes/Deteccion-caidas-imagen.png"
+                src="./assets/imagenes/Marketminds-img.png"
                 class="card-img-top"
                 alt="Proyecto 1"
               />
               <div class="card-body">
                 <h5 class="card-title">
-                  Dispositivo de Detección de Caídas en Adultos Mayores
+                  Website "MarketMinds"
                 </h5>
                 <p class="card-text">
-                  Desarrollo de tecnología wearable utilizando redes neuronales.
+                  Diseño y programación de página web para un equipo de desarrolladores.
                 </p>
               </div>
             </div>
@@ -165,7 +136,7 @@
           <div class="col-md-4">
             <div class="card h-100 shadow-sm">
               <img
-                src="./assets/imagenes/El-Truco-imagen.avif"
+                src="./assets/imagenes/El-Truco-imagen.png"
                 class="card-img-top"
                 alt="Proyecto 2"
               />
@@ -205,7 +176,7 @@
     </section>
 
     <!-- Contacto -->
-    <section id="contacto" class="py-5 bg-light">
+    <section id="contacto" class="py-5 bg-light text-dark">
       <div class="container text-center">
         <h2 class="mb-4">Contacto</h2>
         <h5 class="mb-2"><a class="text-dark text-decoration-none" href="mailto:luzhernandezocon@gmail.com">luzhernandezocon@gmail.com</a></h5>

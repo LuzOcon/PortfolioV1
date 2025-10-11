@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Luz Ocón</title>
+    <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../../index.html"><i class="bi bi-house"></i></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Proyectos</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../../proyectos/proyectos.html#todos">Todos mis Proyectos</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../../proyectos/proyectos.html#html">HTML / CSS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../../proyectos/proyectos.html#python">Python</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../aboutMe.html">Sobre Mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../aboutMe.html">CV</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+<!-- SECCIÓN DEL PROYECTO -->
+ <main class="mt-4">
+  <!-- ====== proeycto Carousel ====== -->
+   <div class="container p-4 text-center">
+        <h1 class="fw-bold">Website El Truco</h1>
+        <p class="lead">E-commerce sostenible de huevos orgánicos</p>
+    </div>
+  <section id="proyectCarousel" class="carousel slide m-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../../assets/imagenes/El-Truco-imagen.png" class="d-block w-100 hero-carousel-img" alt="Vista principal El Truco">
+      </div>
+      <div class="carousel-item">
+        <img src="../../assets/imagenes/eltruco-img2.png" class="d-block w-100 hero-carousel-img" alt="Vista 2 del proyecto">
+      </div>
+      <div class="carousel-item">
+        <img src="../../assets/imagenes/eltruco-img3.png" class="d-block w-100 hero-carousel-img" alt="Vista 3 del proyecto">
+      </div>
+    </div>
+
+    <!-- Controles -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#proyectCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#proyectCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </section>
+
+  <!-- ====== Contenido del Proyecto ====== -->
+  <main class="container py-5">
+
+    <section class="mb-5">
+      <h2 class="fw-bold mb-3">Contexto</h2>
+      <p>
+        Este proyecto nació como una propuesta de comercio electrónico para una granja local dedicada a la producción de huevos orgánicos. 
+        El objetivo fue crear una presencia digital moderna, con una estética cálida y natural que transmitiera confianza y sostenibilidad.
+      </p>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="fw-bold mb-3">Rol y Tecnologías</h2>
+      <ul>
+        <li><strong>Rol:</strong> Diseño UI/UX, desarrollo front-end y estructura base del sitio.</li>
+        <li><strong>Tecnologías:</strong> HTML, CSS, JavaScript, Bootstrap, diseño responsivo.</li>
+      </ul>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="fw-bold mb-3">Desafíos y Soluciones</h2>
+      <p>
+        Uno de los principales retos fue equilibrar la identidad visual orgánica con una estructura profesional y moderna. 
+        Se implementó una paleta de colores naturales, animaciones sutiles y un diseño adaptable a dispositivos móviles. 
+        También se optimizaron las imágenes y el código para lograr tiempos de carga rápidos.
+      </p>
+    </section>
+
+    <!-- Botones -->
+    <div class="text-center mt-4">
+      <a href="https://github.com/LuzOcon/el-truco" target="_blank" class="btn btn-dark me-2">Ver Código</a>
+      <a href="https://jorgefya.github.io/el-truco/" target="_blank" class="btn btn-outline-light">Ver Demo</a>
+    </div>
+
+  </main>
+
+
+
+     <!-- Footer -->
+  <footer class="footer-custom py-3 text-center">
+    <p class="mb-0">&copy; 2025 - Luz Andrea Hernández ocón</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../../script.js"></script>
+
+</body>
+</html>

@@ -1,15 +1,29 @@
-/* Reset */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ====== Reset y Variables ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+:root {
+  --bg-main: #766a62;
+  --text-main: #ffffff;
+  --accent: #fff5cd;
+  --accent-hover: #fbe86b;
+  --card-bg: rgba(155, 131, 110, 0.397);
+  --navbar-bg: rgb(26, 18, 8);
+  --footer-bg: #1f1405;
+  --light: #ececec;
+}
+
 /* ====== General ====== */
 body {
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background: #766a62;
-  color: #1f1405;
+  font-family: "Montserrat", sans-serif;
+  background: var(--bg-main);
+  color: var(--text-main);
   line-height: 1.6;
 }
 
@@ -18,25 +32,29 @@ body {
   transition: background-color 0.3s ease;
 }
 .navbar.scrolled {
-  background-color: rgba(26, 18, 8, 0.916) !important; /*Esto hace que se sobreescriba el html para dejar que se oscuresca el navbar*/
+  background-color: var(--navbar-bg) !important; 
 }
 .navbar .nav-link {
   color: #fff !important;
   margin-left: 10px;
+  transition: background-color 0.3 ease;
 }
 .navbar .nav-link:hover {
   background-color: rgba(255,255,255,0.1);
   border-radius: 5px;
 }
 .navbar-brand {
-  color: #ececec;
+  color: var(--light);
 }
-
 .dropdown-menu {
-  background-color: rgba(26, 18, 8, 0.916)
+  background-color: transparent;
+  border-color: transparent;
+}
+.dropdown-menu.scrolled {
+  background-color: var(--navbar-bg) !important; 
 }
 .dropdown-item{
-  color: #ececec;
+  color: var(--light);
 }
 
 /* ====== Hero ====== */
@@ -47,13 +65,19 @@ body {
   min-height: 100vh;
 }
 .heroName {
-  color: #ffefa9;
+  color: var(--accent);
 }
 .heroName:hover {
-  color: #fff56c;
-  text-shadow: 0px 0px 15px #ececec;
+  color: var(--accent-hover);
+  text-shadow: 0px 0px 30px var(--light);
+}
+.hero img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
+/* Stack Tech */
 #logoImg{
   width: auto;
   height: 70px;
@@ -62,12 +86,29 @@ body {
 /* ====== Cards ====== */
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: rgba(155, 131, 110, 0.397);
-  color: #ececec;
+  background-color: var(--card-bg);
+  color: var(--light);
 }
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.card-img-top{
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+}
+/* ===== Buttons ====== */
+.btn-dark {
+  background-color: #000;
+  border-color: #000;
+  transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+  background-color: #ffe999;
+  border-color: #fff5cd;
+  color: #000000;
 }
 
 /* ====== Footer ====== */
@@ -75,4 +116,83 @@ body {
   font-size: 0.8em;
   color: #ececec;
   background-color: #1f1405;
+}
+
+/* ====== Responsive ======*/
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+  }
+
+  .navbar .nav-link {
+    margin-left: 0;
+  }
+
+  #logoImg {
+    height: 50px;
+  }
+  .card-img-top{
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+}
+}
+/* =========Proyectos=========== */
+.proyecto {
+      display: none; 
+    }
+.detalle-img{
+   width: 100%;
+  height: auto;
+}
+.mainproyecto{
+  padding-top: 120px; /* espacio por navbar fijo */
+  padding-bottom: 60px;
+  background: linear-gradient(180deg, rgba(83, 65, 49, 0.7), rgba(38, 30, 23, 0.9));
+  min-height: 100vh;
+}
+
+/* =====CV===== */
+.container-cv{
+  background-color: #ffffff;
+  border-color: #150d01;
+  border-radius: 10px;
+  padding: 50px;
+  margin: 100px;
+  color: #000000;
+}
+.img-cv{
+  height: 400px;
+
+}
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-left: 100px;
+}
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: rgb(37, 29, 18);
+  top: 0;
+  bottom: 0;
+  margin-left: -3px;
+}
+.timeline-block {
+  padding: 10px 40px;
+  position: relative;
+  background-color: rgba(52, 32, 23, 0.062);
+}
+.timeline-block::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: var(--footer-bg);
+  top: 20px;
+  border-radius: 50%;
+  z-index: 1;
+  left: -12px;
 }
