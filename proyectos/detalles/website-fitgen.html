@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Luz Ocón | Website FitGen</title>
+    <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../../index.html"><i class="bi bi-house"></i></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Proyectos</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../../proyectos/proyectos.html#todos">Todos mis Proyectos</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../../proyectos/proyectos.html#html">HTML / CSS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../../proyectos/proyectos.html#python">Python</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../aboutMe.html">Sobre Mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../cv.html">CV</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+<!-- SECCIÓN DEL PROYECTO -->
+ <main>
+  <div class="container mt-4 pt-4">
+  <!-- ====== proeycto Carousel ====== -->
+   <div class="text-center mb-5 animate__animated animate__fadeIn">
+        <h1 class="fw-bold display-5 mb-2">Website FitGen</h1>
+        <p class="lead fw-semibold">E-commerce de artículos deportivos</p>
+        <div class="underline mx-auto mb-4"></div> 
+    </div>
+
+  <section id="proyectCarousel" class="carousel slide m-5 shadow overflow-hidden" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../../assets/imagenes/fitgen-img.png" class="d-block w-100 hero-carousel-img" alt="Vista principal FitGen">
+      </div>
+      <div class="carousel-item">
+        <img src="../../assets/imagenes/fitgen-img2.png" class="d-block w-100 hero-carousel-img" alt="Vista 2 del proyecto">
+      </div>
+      <div class="carousel-item">
+        <img src="../../assets/imagenes/fitgen-img3.png" class="d-block w-100 hero-carousel-img" alt="Vista 3 del proyecto">
+      </div>
+    </div>
+
+    <!-- Controles -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#proyectCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#proyectCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </section>
+
+  <!-- ====== Contenido del Proyecto ====== -->
+  <div class="container py-5">
+    <section class="mb-5">
+      <h2 class="fw-bold mb-3 text-accent">Sobre el proyecto</h2>
+      <p>
+        FitGen es una tienda en línea especializada en artículos deportivos, enfocada principalmente en tenis. Este proyecto fue desarrollado durante el Hackatón de Generation México, donde el reto consistía en diseñar y construir un ecommerce funcional en tan solo un día.
+      </p>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="fw-bold mb-3 text-accent">Rol y Tecnologías</h2>
+      <ul>
+        <li><strong>Rol:</strong> Diseño UI/UX, desarrollo front-end y estructura del LogIn y Registro.</li>
+        <li><strong>Tecnologías:</strong> HTML, CSS, JavaScript, Bootstrap, diseño responsivo.</li>
+      </ul>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="fw-bold mb-3 text-accent">Desafíos y Soluciones</h2>
+      <p>
+        El mayor reto fue completar todo el desarrollo en un solo día, equilibrando velocidad con calidad visual y funcionalidad. Además, fue necesario coordinar el diseño y la implementación en poco tiempo, manteniendo coherencia en la identidad visual y la experiencia de usuario.
+      </p>
+    </section>
+
+    <!-- Botones -->
+    <div class="text-center mt-4">
+      <a href="https://github.com/LuzOcon/FitGen" target="_blank" class="btn btn-dark me-2">Ver Código</a>
+      <a href="https://luzocon.github.io/FitGen/" target="_blank" class="btn btn-outline-light">Ver Demo</a>
+    </div>
+</div>
+</div>
+  </main>
+
+
+
+     <!-- Footer -->
+  <footer class="footer-custom py-3 text-center">
+    <p class="mb-0">&copy; 2025 - Luz Andrea Hernández ocón</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../../script.js"></script>
+
+</body>
+</html>

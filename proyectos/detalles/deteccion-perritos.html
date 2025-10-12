@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Luz Ocón | Visión por Computadora con Python</title>
+    <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../../index.html"><i class="bi bi-house"></i></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Proyectos</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../../proyectos/proyectos.html#todos">Todos mis Proyectos</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../../proyectos/proyectos.html#html">HTML / CSS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../../proyectos/proyectos.html#python">Python</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../aboutMe.html">Sobre Mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../../cv.html">CV</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+<!-- SECCIÓN DEL PROYECTO -->
+ <main>
+  <div class="container mt-4 pt-4">
+  <!-- ====== proeycto Carousel ====== -->
+   <div class="text-center mb-5 animate__animated animate__fadeIn">
+        <h1 class="fw-bold display-5 mb-2">Visión por Computadora con Python</h1>
+        <p class="lead fw-semibold">Detección de rostros de perros raza Poodle</p>
+        <div class="underline mx-auto mb-4"></div> 
+    </div>
+
+  <section class="m-5 shadow overflow-hidden">
+      <video width="100%" height="auto" controls>
+  <source src="../../assets/imagenes/detector-cabezito.mp4" type="video/mp4"> Your browser does not support the video tag.</video>
+  </section>
+
+  <!-- ====== Contenido del Proyecto ====== -->
+  <div class="container py-5">
+    <section class="mb-5">
+      <h2 class="fw-bold mb-3 text-accent">Sobre el proyecto</h2>
+      <p>
+        Proyecto desarrollado como práctica personal de inteligencia artificial aplicada a visión por computadora, centrado en la detección de rostros de perritos (especialmente raza Poodle) usando modelos de clasificación.
+      </p>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="fw-bold mb-3 text-accent">Rol y Tecnologías</h2>
+      <ul>
+        <li><strong>Rol:</strong> Desarrolladora principal</li>
+        <li><strong>Tecnologías:</strong> Python, OpenCV, NumPy, Cascade Classifier.</li>
+      </ul>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="fw-bold mb-3 text-accent">Desafíos y Soluciones</h2>
+      <p>
+        El principal reto fue entrenar y ajustar el clasificador Haar Cascade para una detección precisa, reduciendo falsos positivos y asegurando un rendimiento fluido en tiempo real.
+      </p>
+    </section>
+
+    <!-- Botones -->
+    <div class="text-center mt-4">
+      <a href="https://github.com/LuzOcon/Detector-Perritos" target="_blank" class="btn btn-dark me-2">Ver Código</a>
+    </div>
+</div>
+</div>
+  </main>
+
+
+
+     <!-- Footer -->
+  <footer class="footer-custom py-3 text-center">
+    <p class="mb-0">&copy; 2025 - Luz Andrea Hernández ocón</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../../script.js"></script>
+
+</body>
+</html>
