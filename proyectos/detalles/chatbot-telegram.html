@@ -12,21 +12,19 @@
   <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
-    <!-- navbar -->
+    <!-- Navbar -->
     <header>
       <nav class="navbar navbar-expand-lg fixed-top p-3">
         <div class="container-fluid">
           <a class="navbar-brand" href="../../index.html"><i class="bi bi-house"></i></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-          >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../../cv.html">Currículum</a>
+              </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Proyectos</a>
                 <ul class="dropdown-menu">
@@ -34,7 +32,7 @@
                     <a class="dropdown-item" href="../../proyectos/proyectos.html#todos">Todos mis Proyectos</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="../../proyectos/proyectos.html#html">HTML / CSS</a>
+                    <a class="dropdown-item" href="../../proyectos/proyectos.html#html">HTML/CSS</a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="../../proyectos/proyectos.html#python">Python</a>
@@ -42,10 +40,10 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../../aboutMe.html">Sobre Mí</a>
+                <a class="nav-link" href="../../aboutMe.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../../cv.html">CV</a>
+                <a class="nav-link" href="../../blog.html">Blog</a>
               </li>
             </ul>
           </div>
@@ -58,22 +56,40 @@
   <div class="container mt-4 pt-4">
   <!-- ====== proeycto Carousel ====== -->
    <div class="text-center mb-5 animate__animated animate__fadeIn">
-        <h1 class="fw-bold display-5 mb-2">Visión por Computadora con Python</h1>
-        <p class="lead fw-semibold">Detección de rostros de perros raza Poodle</p>
+        <h1 class="fw-bold display-5 mb-2">ChatBot en Telegram</h1>
+        <p class="lead fw-semibold">ChatBot en Telegram para preguntas frecuentes de mascotas comunes (En mantenimiento)</p>
         <div class="underline mx-auto mb-4"></div> 
     </div>
 
-  <section class="m-5 shadow overflow-hidden">
-      <video width="100%" height="auto" controls>
-  <source src="../../assets/imagenes/detector-cabezito.mp4" type="video/mp4"> Your browser does not support the video tag.</video>
-  </section>
+  <!-- <section id="proyectCarousel" class="carousel slide m-5 shadow overflow-hidden" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../../assets/imagenes/Cabezito-bot-screenshot.jpeg" class="d-block w-100 hero-carousel-img" alt="Vista principal">
+      </div>
+      <div class="carousel-item">
+        <img src="../../assets/imagenes/control-ls.webp" class="d-block w-100 hero-carousel-img" alt="Vista 2 del proyecto">
+      </div>
+      <div class="carousel-item">
+        <img src="../../assets/imagenes/control-gastos-img.webp" class="d-block w-100 hero-carousel-img" alt="Vista 3 del proyecto">
+      </div>
+    </div> -->
+     <!-- Controles -->
+    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#proyectCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#proyectCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </section> -->
 
   <!-- ====== Contenido del Proyecto ====== -->
   <div class="container py-5">
     <section class="mb-5">
       <h2 class="fw-bold mb-3 text-accent">Sobre el proyecto</h2>
       <p>
-        Proyecto desarrollado como práctica personal de inteligencia artificial aplicada a visión por computadora, centrado en la detección de rostros de perritos (especialmente raza Poodle) usando modelos de clasificación.
+        Desarrollo de un ChatBot en Telegram diseñado para responder preguntas frecuentes sobre el cuidado de mascotas comunes (perros, gatos, conejos y aves). 
       </p>
     </section>
 
@@ -81,20 +97,20 @@
       <h2 class="fw-bold mb-3 text-accent">Rol y Tecnologías</h2>
       <ul>
         <li><strong>Rol:</strong> Desarrolladora principal</li>
-        <li><strong>Tecnologías:</strong> Python, OpenCV, NumPy, Cascade Classifier.</li>
+        <li><strong>Tecnologías:</strong> Python.</li>
       </ul>
     </section>
 
     <section class="mb-5">
       <h2 class="fw-bold mb-3 text-accent">Desafíos y Soluciones</h2>
       <p>
-        El principal reto fue entrenar y ajustar el clasificador Haar Cascade para una detección precisa, reduciendo falsos positivos y asegurando un rendimiento fluido en tiempo real.
+        El reto principal fue diseñar un flujo de conversación natural y útil, que mantuviera coherencia y manejara distintas ramas de diálogo sin errores, además de lograr la conexión estable con la API y una buena gestión de mensajes simultáneos.
       </p>
     </section>
 
     <!-- Botones -->
     <div class="text-center mt-4">
-      <a href="https://github.com/LuzOcon/Detector-Perritos" target="_blank" class="btn btn-dark me-2">Ver Código</a>
+      <a href="#" target="_blank" class="btn btn-dark me-2">Ver Código</a>
     </div>
 </div>
 </div>

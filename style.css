@@ -15,7 +15,7 @@
   --accent-hover: #fbe86b;
   --accent2: #3b342c;
   --accent2-hover: #1f1c15;
-  --card-bg: rgba(155, 131, 110, 0.397);
+  --card-bg: #645952;
   --navbar-bg: rgb(26, 18, 8);
   --footer-bg: #1f1405;
   --light: #ececec;
@@ -285,6 +285,14 @@ hr.cvline{
 section p, ul li {
   font-size: 1.05rem;
   line-height: 1.8;
+}
+
+/*===== BLOG====== */
+.img-blog{
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+
 }
 
 /* ====== Responsive ======*/
