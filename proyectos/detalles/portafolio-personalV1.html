@@ -52,16 +52,16 @@
       </nav>
     </header>
 <!-- SECCIÓN DEL PROYECTO -->
- <main>
-  <div class="container mt-4 pt-4">
+ <main >
+  <div class="container mt-5 pt-5">
   <!-- ====== proeycto Carousel ====== -->
     <div class="text-center mb-5 animate__animated animate__fadeIn">
       <h1 class="fw-bold display-5 mb-2">Portafolio personal</h1> 
       <p class="lead fw-semibold">Landing page</p> 
-      <div class="underline mx-auto mb-4"></div> 
+      <div class="underline mx-auto"></div> 
     </div>
 
-  <section id="proyectCarousel" class="carousel slide m-5 shadow overflow-hidden" data-bs-ride="carousel">
+  <section id="proyectCarousel" class="carousel slide m-3 shadow overflow-hidden" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="../../assets/imagenes/Landingpage-img.webp" class="d-block w-100 hero-carousel-img" alt="Vista principal Portafolio">
@@ -85,27 +85,67 @@
     </button>
   </section>
 
+   <div class="row justify-content-center">
+    <div class="col-4 col-md-2">
+      <img src="../../assets/imagenes/Landingpage-img.webp" class="img-fluid thumbnail border border-2 border-transparent rounded-3" data-bs-target="#proyectCarousel" data-bs-slide-to="0" alt="Miniatura 1">
+    </div>
+    <div class="col-4 col-md-2">
+      <img src="../../assets/imagenes/Landingpage-img2.webp" class="img-fluid thumbnail border border-2 border-transparent rounded-3" data-bs-target="#proyectCarousel" data-bs-slide-to="1" alt="Miniatura 2">
+    </div>
+    <div class="col-4 col-md-2">
+      <img src="../../assets/imagenes/Landingpage-img3.webp" class="img-fluid thumbnail border border-2 border-transparent rounded-3" data-bs-target="#proyectCarousel" data-bs-slide-to="2" alt="Miniatura 3">
+    </div>
+  </div>
+</div>
+
   <!-- ====== Contenido del Proyecto ====== -->
-  <div class="container py-5">
+  <div class="container py-5 mt-5">
+    <section>
+      <div class="row justify-content-between">
+        <div class="col-lg-6 col-md-12">
+          <h2 class="fw-bold mb-3 text-light">Sobre el proyecto</h2>
+          <div class="underline2 mb-2"></div> 
+          <p>
+            El proyecto consistió en el diseño y desarrollo integral de una landing page personal. Mi objetivo era diferenciarse del currículum tradicional, creando una plataforma que muestre mis habilidades y proyectos de forma directa. Se adoptó un enfoque de diseño puramente minimalista, priorizando la claridad visual, la usabilidad intuitiva y una interfaz moderna y limpia.
+          </p>
+          <h2 class="fw-bold mb-3 text-light">Rol y Tecnologías</h2>
+          <div class="underline2 mb-2"></div>
+            <ul>
+              <li><strong>Rol:</strong> Diseño UI/UX, desarrollo front-end y estructura base del sitio.</li>
+              <li><strong>Tecnologías:</strong> HTML, CSS, JavaScript, Bootstrap, diseño responsivo.</li>
+            </ul>
+          </div>
+        <div class="col-lg-5 col-md-12 ">
+          <img src="../../assets/imagenes/estilos_portafolio.png" alt="" class="paleta">
+        </div>
+      </div>
+    </section>
+
     <section class="mb-5">
-      <h2 class="fw-bold mb-3 text-accent">Sobre el proyecto</h2>
+      <h2 class="fw-bold mb-3 text-light">Proceso de diseño</h2>
+      <div class="underline2 mb-2"></div>
       <p>
-        Diseñé y desarrollé mi propia landing page como carta de presentación profesional. Mi objetivo fue reflejar mi estilo, habilidades y proyectos mediante una interfaz limpia, moderna y con un enfoque minimalista.
+        El proceso inició con una fase de planeación, donde se definieron los objetivos principales del sitio: comunicar de manera visual mi perfil profesional y facilitar la navegación entre proyectos. Posteriormente, se elaboraron wireframes que sirvieron como guía estructural.</p>
+        <p>Durante el desarrollo, se aplicaron principios de diseño centrado en el usuario, asegurando que cada sección tuviera una función clara y que la experiencia fuera coherente en distintos dispositivos. Finalmente, se realizaron pruebas de responsividad y usabilidad para garantizar un rendimiento óptimo y una presentación consistente en todos los tamaños de pantalla.
       </p>
+      <div class="row justify-content-center align-items-center">
+        <div class="col-4">
+         <img src="../../assets/imagenes/Frame-portafolio.webp" alt="" class="wireframe">
+        </div>
+        <div class="col-4">
+         <img src="../../assets/imagenes/frame-portafolio3.webp" alt="" class="wireframe">
+        </div>        
+        <div class="col-4">
+         <img src="../../assets/imagenes/frame-portafolio2.webp" alt="" class="wireframe">
+        </div>  
+      </div>
     </section>
 
     <section class="mb-5">
-      <h2 class="fw-bold mb-3 text-accent">Rol y Tecnologías</h2>
-      <ul>
-        <li><strong>Rol:</strong> Diseño UI/UX, desarrollo front-end y estructura base del sitio.</li>
-        <li><strong>Tecnologías:</strong> HTML, CSS, JavaScript, Bootstrap, diseño responsivo.</li>
-      </ul>
-    </section>
-
-    <section class="mb-5">
-      <h2 class="fw-bold mb-3 text-accent">Desafíos y Soluciones</h2>
+      <h2 class="fw-bold mb-3 text-light">Desafíos y Soluciones</h2>
+      <div class="underline2 mb-2"></div>
       <p>
-        Lograr una navegación fluida y atractiva sin recurrir a frameworks. El mayor reto fue optimizar la experiencia visual manteniendo una carga ligera, lo que implicó un balance entre animaciones suaves y rendimiento.
+        Durante el desarrollo, uno de los mayores retos fue mantener la coherencia visual entre las secciones a medida que añadía nuevos elementos. También enfrenté dificultades al lograr que la página fuera completamente responsiva. Algunos elementos no se alineaban correctamente en pantallas pequeñas, así que ajusté el layout utilizando flexbox y grid, además de realizar pruebas en diferentes dispositivos.
       </p>
     </section>
 

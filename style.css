@@ -17,7 +17,7 @@
   --accent2-hover: #1f1c15;
   --card-bg: #645952;
   --navbar-bg: rgb(26, 18, 8);
-  --footer-bg: #1f1405;
+  --footer-bg: rgb(26, 18, 8);
   --light: #ececec;
 }
 
@@ -29,6 +29,7 @@ html, body {
   line-height: 1.6;
   overflow-x: hidden;
 }
+
 h1, h2 {
   letter-spacing: 0.5px;
 }
@@ -190,6 +191,11 @@ h1, h2 {
     margin: 0 1rem 1rem 1rem; 
     text-align: center;
 }
+.btn-light:hover {
+    background-color: var(--accent);
+    border: var(--accent);
+    
+}
 
 /* ====== Footer ====== */
 .footer-custom {
@@ -210,7 +216,7 @@ h1, h2 {
   filter: brightness(95%);
 }
 .mainproyecto{
-  padding-top: 120px; /* espacio por navbar fijo */
+  padding-top: 180px; /* espacio por navbar fijo */
   padding-bottom: 60px;
   background: linear-gradient(180deg, rgba(83, 65, 49, 0.7), rgba(38, 30, 23, 0.9));
   min-height: 100vh;
@@ -224,10 +230,40 @@ h1, h2 {
   background: var(--accent);
   border-radius: 2px;
 }
+.underline2 {
+  width: 120px;
+  height: 4px;
+  background: var(--accent);
+  border-radius: 2px;
+}
 .hero-carousel-img{
   width: 100%;
-  height: 600px;
+  height: auto;
+  max-height: 600px;
 }
+.thumbnail {
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.7;
+  }
+  .thumbnail:hover {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  .border-transparent {
+    border-color: transparent !important;
+  }
+  .paleta{
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    align-items: center;
+  }
+  .wireframe{
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+  }
 /* =====CV===== */
 .container-cv{
   background-color: #ffffff;
