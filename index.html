@@ -17,15 +17,12 @@
     <header>
       <nav class="navbar navbar-expand-lg fixed-top p-3">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><i class="bi bi-house"></i></a>
+          <a class="navbar-brand" href="index.html"><i class="bi bi-house custom-navbar-icon"></i></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="cv.html">Currículum</a>
-              </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Proyectos</a>
                 <ul class="dropdown-menu">
@@ -40,8 +37,11 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="aboutMe.html">About</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="cv.html">Currículum</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="blog.html">Blog</a>
@@ -62,7 +62,7 @@
             <h1 class="fw-bold text-big">
               ¡Hola, soy <span class="heroName">Luz</span>!
             </h1>
-            <p class="display-6 mb-4">Desarrollo Front-end & UX design</p>
+            <p class="display-6 mb-4">Desarrollo Fullstack & UX design</p>
             <a href="#contacto" class="btn btn-lg btn-outline-light">Contáctame</a>
           </div>
     </section>
@@ -70,25 +70,152 @@
     <!-- Sobre mí -->
     <section id="sobre-mi" class="py-5 bg-light text-dark">
       <div class="container text-center">
-        <h2 class="fw-bold display-6 mt-3">Sobre mí</h2> 
+        <h2 class="fw-bold display-6 mt-3">Sobre mí</h2>
+        <div class="underline-brown mx-auto"></div> 
         <div class="container">
-          <div class="row justify-content-center">
+          <div class="row justify-content-center mt-3">
             <div class="col-lg-10">
-              <p class="lead mx-auto fw-semibold"> Soy desarrolladora Java Fullstack junior especializada en Front-end. Tengo formación en Ingeniería Biomédica, y me apasiona la programación y la Inteligencia Artificial. Mi objetivo es crecer profesionalmente en desarrollo Fullstack, aportando impacto en entornos tecnológicos desafiantes y aprendiendo continuamente. 
+              <p class="lead mx-auto fw-semibold"> Soy desarrolladora Java Fullstack junior. Tengo formación en Ingeniería Biomédica, y me apasiona la programación y la Inteligencia Artificial. Mi objetivo es crecer profesionalmente en desarrollo Fullstack, aportando impacto en entornos tecnológicos desafiantes y aprendiendo continuamente. 
               </p>
-            </div> 
-            <br>
-            <br>
-            <h2 class="fw-bold display-6 m-5">Stack Tech</h2>
-            <div class="col-lg-8 mb-5">
-              <div class="d-flex justify-content-around flex-wrap gap-3">
-                <img class="img-hover" src="./assets/imagenes/HTML5-Logo.webp" alt="HTML logo" id="logoImg">
-                <img src="./assets/imagenes/CSS-logo.webp" alt="CSS logo" id="logoImg">
-                <img src="./assets/imagenes/JavaScript-Logo.webp" alt="JS logo" id="logoImg">
-                <img src="./assets/imagenes/Java-logo.webp" alt="Java logo" id="logoImg">
-                <img src="./assets/imagenes/Python-logo.webp" alt="Python logo" id="logoImg">
-              </div>
+            </div>
           </div>  
+            <br>
+            <br>
+            <h2 class="fw-bold display-6 mt-5">Stack Tech</h2>
+            <div class="underline-brown mx-auto"></div> 
+            <div class="row justify-content-around mt-3">
+            <div class="col-lg-2 mb-5">
+              <h3>Frontend</h3>
+              <div class="d-flex justify-content-around flex-wrap gap-3">
+                <div class="icon-container">
+                  <div class="flip-card-inner">
+                    <div class="flip-front">
+                    <img src="./assets/imagenes/css-icon.svg" alt="CSS logo" id="logoImg">
+                    </div>
+                      <div class="flip-back">CSS</div>
+                  </div>
+                </div>
+                <div class="icon-container">
+                  <div class="flip-card-inner">
+                    <div class="flip-front">
+                <img src="./assets/imagenes/js-icon.svg" alt="JS logo" id="logoImg">
+                </div>
+                      <div class="flip-back">Java Script</div>
+                  </div>
+                </div>
+                <div class="icon-container">
+                  <div class="flip-card-inner">
+                    <div class="flip-front">
+                <img src="./assets/imagenes/html-icon.svg" alt="Java logo" id="logoImg">
+                </div>
+                      <div class="flip-back">HTML</div>
+                  </div>
+                </div>
+                <div class="icon-container">
+                  <div class="flip-card-inner">
+                    <div class="flip-front">
+                <img src="./assets/imagenes/bootstrap-icon.svg" alt="Bootstrap logo" id="logoImg">
+                </div>
+                      <div class="flip-back">Boot strap</div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-2 mb-5">
+            <h3>Backend</h3>
+              <div class="d-flex justify-content-around flex-wrap gap-3">
+                <div class="icon-container">
+                  <div class="flip-card-inner">
+                    <div class="flip-front">
+                <img src="./assets/imagenes/spring-icon.svg" alt="Spring logo" id="logoImg">
+                </div>
+                      <div class="flip-back">Spring</div>
+                  </div>
+                </div>
+                <div class="icon-container">
+                  <div class="flip-card-inner">
+                    <div class="flip-front">
+                <img src="./assets/imagenes/mysql-icon.svg" alt="MySQL logo" id="logoImg">
+                </div>
+                      <div class="flip-back">MySQL</div>
+                  </div>
+                </div>
+                <div class="icon-container">
+                  <div class="flip-card-inner">
+                    <div class="flip-front">
+                <img src="./assets/imagenes/python-icon.svg" alt="Python logo" id="logoImg">
+                </div>
+                      <div class="flip-back">Python</div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-2 mb-5">
+            <h3>Software</h3>
+              <div class="d-flex justify-content-around flex-wrap gap-3">
+                <div class="icon-container">
+                  <div class="flip-card-inner">
+                    <div class="flip-front">
+                <img src="./assets/imagenes/figma-icon.svg" alt="Figma logo" id="logoImg">
+                </div>
+                      <div class="flip-back">Figma</div>
+                  </div>
+                </div>
+                <div class="icon-container">
+                  <div class="flip-card-inner">
+                    <div class="flip-front">
+                <img src="./assets/imagenes/postman-icon.svg" alt="Postman logo" id="logoImg">
+                </div>
+                      <div class="flip-back">Post man</div>
+                  </div>
+                </div>
+                <div class="icon-container">
+                  <div class="flip-card-inner">
+                    <div class="flip-front">
+                <img src="./assets/imagenes/matlab-icon.svg" alt="MatLab logo" id="logoImg">
+                </div>
+                      <div class="flip-back">MatLab</div>
+                  </div>
+                </div>
+                <div class="icon-container">
+                  <div class="flip-card-inner">
+                    <div class="flip-front">
+                <img src="./assets/imagenes/jira-icon.svg" alt="Jira logo" id="logoImg">
+                </div>
+                      <div class="flip-back">Jira</div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-2 mb-5">
+            <h3>Other</h3>
+              <div class="d-flex justify-content-around flex-wrap gap-3">
+                <div class="icon-container">
+                  <div class="flip-card-inner">
+                    <div class="flip-front">
+                <img src="./assets/imagenes/arduino-icon.svg" alt="Arduino logo" id="logoImg">
+                </div>
+                      <div class="flip-back">Arduino</div>
+                  </div>
+                </div>
+                <div class="icon-container">
+                  <div class="flip-card-inner">
+                    <div class="flip-front">
+                <img src="./assets/imagenes/git-icon.svg" alt="Git logo" id="logoImg">
+                </div>
+                      <div class="flip-back">Git</div>
+                  </div>
+                </div>
+                <div class="icon-container">
+                  <div class="flip-card-inner">
+                    <div class="flip-front">
+                <img src="./assets/imagenes/jest-icon.svg" alt="Jest logo" id="logoImg">
+                </div>
+                      <div class="flip-back">Jest</div>
+                  </div>
+                </div>
+              </div>
+          </div>        
         </div>
       </div>
     </div>
@@ -105,7 +232,13 @@
           <img src="assets/imagenes/El-Truco-imagen.webp" class="card-img-top" alt="Proyecto 2">
           <div class="card-body">
             <h5 class="card-title">Website "El Truco"</h5>
-            <span class="card-html">HTML</span><span class="card-css">CSS</span><span class="card-js">JS</span>
+            <img src="assets/imagenes/html-icon.svg" alt="" class="card-icon">
+            <img src="assets/imagenes/css-icon.svg" alt="" class="card-icon">
+            <img src="assets/imagenes/js-icon.svg" alt="" class="card-icon">
+            <img src="assets/imagenes/bootstrap-icon.svg" alt="" class="card-icon">
+            <img src="assets/imagenes/java-icon.svg" alt="" class="card-icon">
+            <img src="assets/imagenes/spring-icon.svg" alt="" class="card-icon">
+            <img src="assets/imagenes/mysql-icon.svg" alt="" class="card-icon">
             <p class="card-text">Diseño y programación de página web para venta de productos ganaderos.</p>
           </div>
           <a href="proyectos/detalles/website-eltruco.html" class="btn btn-light mt-auto">Ver más</a>
@@ -118,7 +251,10 @@
           <img src="assets/imagenes/Marketminds-img.webp" class="card-img-top" alt="Proyecto 3">
           <div class="card-body">
             <h5 class="card-title">Website "MarketMinds"</h5>
-            <span class="card-html">HTML</span><span class="card-css">CSS</span><span class="card-js">JS</span>
+            <img src="assets/imagenes/html-icon.svg" alt="" class="card-icon">
+            <img src="assets/imagenes/css-icon.svg" alt="" class="card-icon">
+            <img src="assets/imagenes/js-icon.svg" alt="" class="card-icon">
+            <img src="assets/imagenes/bootstrap-icon.svg" alt="" class="card-icon">
             <p class="card-text">Diseño y programación de página web para equipo de desarrolladores.</p>         
           </div>
            <a href="proyectos/detalles/website-marketminds.html" class="btn btn-light">Ver más</a>
@@ -131,7 +267,10 @@
           <img src="assets/imagenes/fitgen-img.webp" class="card-img-top" alt="Proyecto 3">
           <div class="card-body">
             <h5 class="card-title">Website "FitGen"</h5> 
-            <span class="card-html">HTML</span><span class="card-css">CSS</span><span class="card-js">JS</span>
+            <img src="assets/imagenes/html-icon.svg" alt="" class="card-icon">
+            <img src="assets/imagenes/css-icon.svg" alt="" class="card-icon">
+            <img src="assets/imagenes/js-icon.svg" alt="" class="card-icon">
+            <img src="assets/imagenes/bootstrap-icon.svg" alt="" class="card-icon">
             <p class="card-text">Diseño y programación de página web para tienda deportiva.</p>
           </div>
           <a href="proyectos/detalles/website-fitgen.html" class="btn btn-light">Ver más</a>
@@ -164,6 +303,10 @@
           </li>
         </ul>
       </div>
+        <div class="text-center m-3">
+          <a href="assets/LuzHernandezOcon-CV.pdf" download class="btn btn-lg btn-outline-brown">
+          <i class="bi bi-download me-2"></i> Descargar CV</a>
+        </div>
     </section>
 
     <!-- Footer -->

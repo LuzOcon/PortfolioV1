@@ -16,17 +16,14 @@
     <header>
       <nav class="navbar navbar-expand-lg fixed-top p-3">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html"><i class="bi bi-house"></i></a>
+          <a class="navbar-brand" href="../index.html"><i class="bi bi-house custom-navbar-icon"></i></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="../cv.html">Currículum</a>
-              </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Proyectos</a>
+                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Proyectos</a>
                 <ul class="dropdown-menu">
                   <li>
                     <a class="dropdown-item" href="../proyectos/proyectos.html#todos">Todos mis Proyectos</a>
@@ -39,8 +36,11 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="../aboutMe.html">About</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="../cv.html">Currículum</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../blog.html">Blog</a>
@@ -53,9 +53,10 @@
 
 <body>
     <!-- Main content -->
-     <div class="container my-5 align-items-center justify-content-center">
-          <h1 class="text-center mb-4 fw-bold">Mis Proyectos</h1>
-     </div>
+     <div class="text-center mt-5 pt-5">
+      <h1 class="fw-bold display-5 text-light">Mis proyectos</h1>
+      <div class="underline mx-auto"></div>
+    </div>
   <div class="container my-5 align-items-center justify-content-center">
     <div class="row g-4">
       
@@ -65,7 +66,10 @@
           <img src="../assets/imagenes/Landingpage-img.webp" class="card-img-top" alt="Proyecto 1">
           <div class="card-body">
             <h5 class="card-title">Portafolio personal</h5>
-            <span class="card-html">HTML</span><span class="card-css">CSS</span><span class="card-js">JS</span>
+            <img src="../assets/imagenes/html-icon.svg" alt="" class="card-icon">
+            <img src="../assets/imagenes/css-icon.svg" alt="" class="card-icon">
+            <img src="../assets/imagenes/js-icon.svg" alt="" class="card-icon">
+            <img src="../assets/imagenes/bootstrap-icon.svg" alt="" class="card-icon">
             <p class="card-text">Una landing page hecha con HTML, CSS, JavaScript y Bootstrap.</p>
           </div>
           <a href="detalles/portafolio-personalV1.html" class="btn btn-light">Ver más</a>
@@ -78,7 +82,13 @@
           <img src="../assets/imagenes/El-Truco-imagen.webp" class="card-img-top" alt="Proyecto 2">
           <div class="card-body">
             <h5 class="card-title">Website "El Truco"</h5>
-            <span class="card-html">HTML</span><span class="card-css">CSS</span><span class="card-js">JS</span>
+            <img src="../assets/imagenes/html-icon.svg" alt="" class="card-icon">
+            <img src="../assets/imagenes/css-icon.svg" alt="" class="card-icon">
+            <img src="../assets/imagenes/js-icon.svg" alt="" class="card-icon">
+            <img src="../assets/imagenes/bootstrap-icon.svg" alt="" class="card-icon">
+            <img src="../assets/imagenes/java-icon.svg" alt="" class="card-icon">
+            <img src="../assets/imagenes/spring-icon.svg" alt="" class="card-icon">
+            <img src="../assets/imagenes/mysql-icon.svg" alt="" class="card-icon">
             <p class="card-text">Diseño y programación de página web para venta de productos ganaderos.</p>
           </div>
             <a href="detalles/website-eltruco.html" class="btn btn-light">Ver más</a>
@@ -91,7 +101,10 @@
           <img src="../assets/imagenes/Marketminds-img.webp" class="card-img-top" alt="Proyecto 3">
           <div class="card-body">
             <h5 class="card-title">Website "MarketMinds"</h5>
-            <span class="card-html">HTML</span><span class="card-css">CSS</span><span class="card-js">JS</span>
+            <img src="../assets/imagenes/html-icon.svg" alt="" class="card-icon">
+            <img src="../assets/imagenes/css-icon.svg" alt="" class="card-icon">
+            <img src="../assets/imagenes/js-icon.svg" alt="" class="card-icon">
+            <img src="../assets/imagenes/bootstrap-icon.svg" alt="" class="card-icon">
             <p class="card-text">Diseño y programación de página web para equipo de desarrolladores.</p>
           </div>
           <a href="detalles/website-marketminds.html" class="btn btn-light">Ver más</a>
@@ -104,7 +117,10 @@
           <img src="../assets/imagenes/fitgen-img.webp" class="card-img-top" alt="Proyecto 3">
           <div class="card-body">
             <h5 class="card-title">Website "FitGen"</h5> 
-            <span class="card-html">HTML</span><span class="card-css">CSS</span><span class="card-js">JS</span>
+            <img src="../assets/imagenes/html-icon.svg" alt="" class="card-icon">
+            <img src="../assets/imagenes/css-icon.svg" alt="" class="card-icon">
+            <img src="../assets/imagenes/js-icon.svg" alt="" class="card-icon">
+            <img src="../assets/imagenes/bootstrap-icon.svg" alt="" class="card-icon">
             <p class="card-text">Diseño y programación de página web para tienda deportiva.</p>
           </div>
           <a href="detalles/website-fitgen.html" class="btn btn-light">Ver más</a>
@@ -117,7 +133,9 @@
           <img src="../assets/imagenes/Generador-imagen.webp" class="card-img-top" alt="Proyecto 3">
           <div class="card-body">
             <h5 class="card-title">Generador de Contraseñas</h5>
-            <span class="card-html">HTML</span><span class="card-css">CSS</span><span class="card-js">JS</span>
+            <img src="../assets/imagenes/html-icon.svg" alt="" class="card-icon">
+            <img src="../assets/imagenes/css-icon.svg" alt="" class="card-icon">
+            <img src="../assets/imagenes/js-icon.svg" alt="" class="card-icon">
             <p class="card-text">Diseño y desarrollo de generador de contraseñas aleatorio.</p>           
           </div>
           <a href="detalles/generador-contrasenas.html" class="btn btn-light">Ver más</a>
@@ -130,7 +148,9 @@
           <img src="../assets/imagenes/control-gastos-img.webp" class="card-img-top" alt="Proyecto 3">
           <div class="card-body">
             <h5 class="card-title">Control de Gastos</h5>
-            <span class="card-html">HTML</span><span class="card-css">CSS</span><span class="card-js">JS</span>
+            <img src="../assets/imagenes/html-icon.svg" alt="" class="card-icon">
+            <img src="../assets/imagenes/css-icon.svg" alt="" class="card-icon">
+            <img src="../assets/imagenes/js-icon.svg" alt="" class="card-icon">
             <p class="card-text">Diseño y desarrollo de generador de contraseñas aleatorio.</p>
           </div>
           <a href="detalles/control-gastos.html" class="btn btn-light">Ver más</a>
@@ -143,7 +163,7 @@
           <img src="../assets/imagenes/Cabezito-bot-imagen.jpeg" class="card-img-top" alt="Proyecto 3">
           <div class="card-body">
             <h5 class="card-title">ChatBot en Telegram</h5>
-            <span class="card-python"> Python </span>
+            <img src="../assets/imagenes/python-icon.svg" alt="" class="card-icon">
             <p class="card-text">Desarrollo de un Chat Bot en Telegram dirigido a preguntas frecuentes de mascotas comunes</p>
           </div>
           <a href="detalles/chatbot-telegram.html" class="btn btn-light">Ver más</a>
@@ -156,7 +176,8 @@
           <img src="../assets/imagenes/Deteccion-perros-imagen.png" class="card-img-top" alt="Proyecto 3">
           <div class="card-body">
             <h5 class="card-title">Visión por Computadora con Python</h5>
-            <span class="card-python"> Python </span>
+            <img src="../assets/imagenes/python-icon.svg" alt="" class="card-icon">
+            <img src="../assets/imagenes/numpy-icon.svg" alt="" class="card-icon">
             <p class="card-text">Programa de detección de rostros de perritos usando modelos de clasificación.</p>
           </div>
           <a href="detalles/deteccion-perritos.html" class="btn btn-light">Ver más</a>

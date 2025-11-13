@@ -41,3 +41,18 @@ window.onload = function() {
 window.onhashchange = function() {
   aplicarFiltroHash();
 };
+
+
+document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(button => {
+  const targetId = button.getAttribute('data-bs-target');
+  const collapseElement = document.querySelector(targetId);
+  const card = button.closest('.card');
+
+  collapseElement.addEventListener('shown.bs.collapse', () => {
+    card.classList.add('open'); // Se abre → aplicar zoom
+  });
+
+  collapseElement.addEventListener('hidden.bs.collapse', () => {
+    card.classList.remove('open'); // Se cierra → volver al estado normal
+  });
+});
